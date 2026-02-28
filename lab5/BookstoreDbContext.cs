@@ -1,5 +1,4 @@
-﻿using lab5.Domain.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,8 +8,5 @@ namespace lab5.Infrastructure
     public class BookstoreDbContext : DbContext {
         public BookstoreDbContext(DbContextOptions<BookstoreDbContext> options)
            : base(options) { }
-        // Maps entities to database tables
-        public DbSet<Author> Authors { get; set; }
-        public DbSet<Book> Books { get; set; }
     }
 }
